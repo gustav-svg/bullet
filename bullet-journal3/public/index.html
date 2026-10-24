@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Bullet Journal</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="film.css">
+</head>
+<body>
+  <div class="app">
+    <aside id="side" class="side" aria-label="Logs"></aside>
+    <main id="main" class="main"></main>
+  </div>
+  <button id="burger" class="burger" type="button" aria-label="Open menu">Menu</button>
+
+  <dialog id="sheet" class="dlg">
+    <div class="dlg-inner">
+      <header class="dlg-head">
+        <h2 id="sheet-title"></h2>
+        <button id="sheet-close" class="btn quiet" type="button">Close</button>
+      </header>
+      <div id="sheet-body" class="dlg-body"></div>
+    </div>
+  </dialog>
+
+  <dialog id="viewer" class="dlg wide">
+    <div class="dlg-inner">
+      <header class="dlg-head">
+        <h2 id="viewer-title"></h2>
+        <div id="viewer-tools" class="dlg-tools"></div>
+        <button id="viewer-close" class="btn quiet" type="button">Close</button>
+      </header>
+      <div id="viewer-body" class="dlg-body"></div>
+    </div>
+  </dialog>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+  <script src="film.js"></script>
+</body>
+</html>
